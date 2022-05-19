@@ -66,7 +66,7 @@ nav .burger {
   cursor: pointer;
 }
 
-@media (max-width: 849px) {
+@media (max-width: 767.98px) {
   nav {
     position: relative;
     display: flex;
@@ -221,7 +221,7 @@ nav .burger {
   margin-left: 30px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 767.98px) {
   .promo-container {
     height: 400px;
   }
@@ -359,7 +359,7 @@ nav .burger {
   transition: color 0.5s ease;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .cases_container {
     flex-direction: column;
     align-items: center;
@@ -375,7 +375,7 @@ nav .burger {
     grid-template-columns: repeat(2, minmax(250px, auto));
   }
 }
-@media (max-width: 610px) {
+@media (max-width: 575.98px) {
   .cases_container {
     flex-direction: column;
     align-items: center;
@@ -475,7 +475,7 @@ nav .burger {
   margin-left: 30px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 767.98px) {
   .client-container .client-trigger > div {
     height: 35px;
     width: 35px;
@@ -606,7 +606,7 @@ nav .burger {
   font-size: 14px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 767.98px) {
   .review-container .review-trigger {
     top: 120%;
   }
@@ -631,7 +631,7 @@ nav .burger {
     margin-right: 30px;
   }
 }
-.bg_footer {
+.footer-bg {
   background-image: url("../img/bg/end_screen.png");
   background-size: cover;
   background-position: center;
