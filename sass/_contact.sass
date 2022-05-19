@@ -1,0 +1,156 @@
+.bg_footer
+	background-image: url('../img/bg/end_screen.png')
+	background-size: cover
+	background-position: center
+
+.contact_container
+	max-width: 1200px
+	width: 100%
+	margin: 140px 30px
+	@include flex(row, space-between)
+
+	.contact-text
+		color: #fff
+		max-width: 450px
+		width: 100%
+		min-height: 250px
+		@include flex(column, space-between)
+
+		h2
+			color: #fff
+
+		p
+			font-family: 'Lato'
+			font-style: normal
+			font-weight: 300
+			font-size: 21px
+			line-height: 29px
+
+			color: #FFFFFF
+
+	.contact-info
+		@include flex(column, space-between)
+		width: 100%
+
+		&>div
+			display: flex
+			align-items: center
+			font-size: 30px
+
+			p
+				font-size: 21px
+				margin-left: 20px
+
+	form
+		width: 100%
+		@include flex(column, space-between)
+		position: relative
+		max-width: 450px
+
+		.form-name
+			display: flex
+			margin-bottom: 20px
+
+			div
+				width: 100%
+				@include flex(column, space-between)
+
+			div + div
+				margin-left: 20px
+
+		.form-message
+			height: 100%
+			@include flex(column, space-between)
+
+		label
+			color: #fff
+			font-size: 16px
+			margin-bottom: 10px
+
+		input
+			border: none
+			background-color: transparent
+			border-bottom: 1px solid #fff
+			padding-bottom: 5px
+			height: 100%
+			width: 100%
+			color: #fff
+			font-size: 24px
+			padding: 5px
+
+			&:hover
+				background-color: #ffffff30
+
+			&:focus-visible
+				outline: none
+				background-color: #ffffff20
+				border-radius: 3px
+
+			&::placeholder
+				color: #BDBDBD
+				font-size: 21px
+
+		textarea
+			border: none
+			background-color: transparent
+			border-bottom: 1px solid #fff
+			padding-bottom: 5px
+			height: 100%
+			width: 100%
+			color: #fff
+			font-size: 24px
+			resize: none
+			padding: 5px
+
+			&:hover
+				background-color: #ffffff30
+
+			&:focus-visible
+				outline: none
+				background-color: #ffffff20
+				border-radius: 3px
+
+			&::placeholder
+				color: #BDBDBD
+				font-size: 21px
+
+		button
+			position: absolute
+			bottom: -80px
+			right: 0
+			background-color: #005FA3
+			color: #fff
+			border: none
+			width: 270px
+			height: 60px
+			font-size: 18px
+			transition: background-color 0.3s ease
+			cursor: pointer
+
+			&:hover
+				background-color: #0080dc
+
+@media (max-width: 991.98px)
+
+	.contact_container
+		flex-direction: column
+		align-items: center
+		margin-top: 70px
+		margin-bottom: 140px
+
+		.contact-text
+			margin-bottom: 80px
+
+		form
+			button
+				width: 200px
+				height: 40px
+				font-size: 13px
+
+@media (max-width: 575.98px)
+
+	.contact-info
+		flex-direction: column
+
+		div + div
+			margin-top: 20px

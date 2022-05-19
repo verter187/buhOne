@@ -1,0 +1,10 @@
+@mixin grid($repeat-count, $track-size, $row-size, $gap-size)
+    display: grid
+    grid-template-columns: repeat($repeat-count, $track-size)
+    grid-auto-rows: $row-size
+    grid-gap: $gap-size
+
+@mixin flex($flex-direction, $justify-content)
+    display: flex
+    flex-direction: $flex-direction
+    justify-content: $justify-content

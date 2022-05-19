@@ -1,0 +1,51 @@
+@import "variables"
+@import "mixins"
+@import 'nav'
+@import 'promos'
+@import 'service'
+@import 'cases'
+@import 'clients'
+@import 'reviews'
+@import 'contact'
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Lato', sans-serif
+	font-family: 'Merriweather', serif
+
+section
+	@include flex(row, center)
+	align-items: center
+	min-width: 375px
+
+h2
+	color: #333333
+	font-family: 'Merriweather'
+	font-style: normal
+	font-size: 48px
+	line-height: 69px
+	font-weight: 900
+	& em
+		margin-top: 60px
+		color: #005FA3
+
+h3
+	color: #BDBDBD
+	font-family: 'Lato'
+	font-style: normal
+	font-weight: 900
+	font-size: 28px
+	line-height: 33.12px
+
+.page-bg
+	background-color: #EBEBEB
+
+@media (max-width: 575.98px)
+
+	h2
+		font-size: 36px
+
+	h3
+		font-size: 20px
